@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Market Analysis",
+  "description": "Analyze tweets for market trends in betting.",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
