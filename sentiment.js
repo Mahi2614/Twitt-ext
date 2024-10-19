@@ -49,7 +49,7 @@
       }
     }
   }
-
+  jhfdhf
   // Expose Sentiment globally
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = Sentiment
